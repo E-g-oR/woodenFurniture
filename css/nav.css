@@ -1,0 +1,36 @@
+.nav {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  margin: 25px 0;
+}
+
+.menu__item {
+  float: left;
+}
+
+.menu__link {
+  padding: 7px 15px;
+}
