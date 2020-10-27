@@ -141,11 +141,24 @@
 }
 
 @media (max-width: 370px) {
+  .header__link {
+    width: 100%;
+    padding: 15px;
+  }
   body {
     padding: 10px;
     padding-top: 80px;
   }
   .whatwedo {
     border: 10px solid #caa477;
+  }
+  .whatwedo .container {
+    padding: 0 10px;
+  }
+  .contact__body {
+    padding: 50px 10px;
+  }
+  .footer__link {
+    padding: 0;
   }
 }
