@@ -1,0 +1,151 @@
+@media (max-width: 1550px) {
+  .whatwedo {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1340px) {
+  body {
+    padding: 70px;
+  }
+  .section {
+    margin: 70px 0;
+  }
+  .logo {
+    margin: 15px 0;
+  }
+  .card__img img {
+    width: 27vw;
+  }
+  .card {
+    padding: 30px;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .card__text {
+    margin: 20px 0;
+  }
+  .whatwedo__list {
+    padding: 0 10px;
+  }
+  .card__about {
+    margin: 10px;
+    margin-left: 50px;
+  }
+  .card:nth-child(even) .card__about {
+    margin: 10px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .card,
+  .card:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 450px;
+    margin: 30px auto;
+  }
+  .card__img img {
+    width: 100%;
+  }
+  .card__text {
+    margin: 20px;
+  }
+  .card__about {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 775px) {
+  body {
+    padding: 50px;
+  }
+  .section {
+    margin: 50px 0;
+  }
+  .whatwedo {
+    border: 50px solid #caa477;
+  }
+}
+
+@media (max-width: 670px) {
+  body {
+    padding: 20px;
+  }
+  .section {
+    margin: 20px 0;
+  }
+  .advantages {
+    padding: 50px;
+  }
+  .whatwedo {
+    border: 20px solid #caa477;
+  }
+  .whatwedo__list {
+    padding: 0;
+  }
+  .card__about,
+  .card:nth-child(even) .card__about {
+    margin: 20px 0;
+  }
+  .card__text {
+    margin: 20px 0;
+  }
+  .options__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .options__input {
+    margin: 7px;
+  }
+}
+
+@media (max-width: 585px) {
+  .advantages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__body {
+    padding: 50px 30px;
+  }
+  .contact .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__title {
+    font-size: 35px;
+  }
+  .header__subtitle {
+    font-size: 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    padding: 10px;
+    padding-top: 80px;
+  }
+  .whatwedo {
+    border: 10px solid #caa477;
+  }
+}
