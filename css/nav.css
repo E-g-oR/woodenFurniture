@@ -23,7 +23,9 @@
   display: block;
   width: 50px;
   height: 50px;
-  background-color: blueviolet;
+  background-image: url(../img/logo/favico.png);
+  background-size: cover;
+  background-position: center;
   margin: 25px 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50px;
