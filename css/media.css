@@ -76,6 +76,35 @@
 @media (max-width: 670px) {
   body {
     padding: 20px;
+    padding-top: 80px;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .menu.menu_active {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  .menu__item {
+    float: none;
+  }
+  .menu__link {
+    display: block;
   }
   .section {
     margin: 20px 0;
@@ -147,7 +176,6 @@
   }
   body {
     padding: 10px;
-    padding-top: 80px;
   }
   .whatwedo {
     border: 10px solid #caa477;

@@ -16,6 +16,77 @@ li {
   list-style: none;
 }
 
+.menu-button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+}
+
+.menu-button.menu_active .menu-button__line-top,
+.menu-button.menu_active .menu-button__line-bottom {
+  top: 14px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu-button.menu_active .menu-button__cube-top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+}
+
+.menu-button.menu_active .menu-button__cube-bottom {
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu-button__cube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.16s;
+  transition: 0.16s;
+}
+
+.menu-button__line {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #000;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-transition: 0.16s;
+  transition: 0.16s;
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+}
+
+.menu-button__line-top {
+  top: 11px;
+}
+
+.menu-button__line-bottom {
+  top: 19px;
+}
+
 body {
   color: #000;
   overflow-x: hidden;
