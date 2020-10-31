@@ -14,6 +14,11 @@
   .logo {
     margin: 15px 0;
   }
+  .nav {
+    height: 80px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
   .card__img img {
     width: 27vw;
   }
@@ -78,33 +83,69 @@
     padding: 20px;
     padding-top: 80px;
   }
+  .nav.menu_active {
+    height: 100vh;
+  }
+  .nav__body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
   .menu-button {
     display: block;
   }
   .menu {
-    position: absolute;
     left: 0;
     top: 80px;
     text-align: center;
-    background-color: #fff;
+    height: 0;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-transform-origin: top;
             transform-origin: top;
+    margin-top: 80px;
   }
   .menu.menu_active {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .menu__item {
     float: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  .menu.menu_active .menu__item {
+    opacity: 1;
+  }
+  .menu.menu_active .menu__item_1 {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .menu.menu_active .menu__item_2 {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .menu.menu_active .menu__item_3 {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .menu.menu_active .menu__item_4 {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
   }
   .menu__link {
     display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 10px;
   }
   .section {
     margin: 20px 0;
@@ -196,8 +237,15 @@
     background-color: #101010;
   }
   .nav {
-    background: rgba(16, 16, 16, 0.3);
+    background: rgba(16, 16, 16, 0.8);
     color: #fff;
+  }
+  .menu__link {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .menu-button__line {
+    background-color: #fff;
   }
   .whatwedo__title {
     color: #fff;

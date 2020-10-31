@@ -24,6 +24,7 @@ li {
   height: 30px;
   position: relative;
   display: none;
+  margin-top: 25px;
 }
 
 .menu-button.menu_active .menu-button__line-top,
