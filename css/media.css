@@ -178,8 +178,8 @@
         -ms-flex-align: start;
             align-items: start;
   }
-  .options__input {
-    margin: 7px;
+  .options__item {
+    margin: 5px 0 5px 20px;
   }
 }
 
@@ -240,10 +240,16 @@
     background: rgba(16, 16, 16, 0.8);
     color: #fff;
   }
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 670px) {
   .menu__link {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
+}
+
+@media (prefers-color-scheme: dark) {
   .menu-button__line {
     background-color: #fff;
   }

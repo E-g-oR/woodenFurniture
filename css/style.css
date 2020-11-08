@@ -372,6 +372,54 @@ textarea.form__input {
   margin-left: 20px;
 }
 
+.option {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.option:checked + .options__label::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.options__label {
+  padding-left: 20px;
+  position: relative;
+}
+
+.options__label::before, .options__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.options__label::before {
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+}
+
+.options__label::after {
+  width: 8px;
+  height: 8px;
+  background-color: #caa477;
+  left: 4px;
+  top: 4px;
+  -webkit-transition: 0.23s;
+  transition: 0.23s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 .form__submit {
   background: #caa477;
   padding: 10px 65px;
